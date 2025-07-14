@@ -40,19 +40,12 @@
       height: auto;
       margin-bottom: 15px;
       opacity: 0;
-      animation: logoFadeIn 1s ease 0.5s forwards, pulseLogo 1.5s infinite;
-      filter: drop-shadow(0 0 10px #00FF00);
+      animation: logoFadeIn 1s ease 0.5s forwards; /* Removed pulseLogo animation */
     }
 
     @keyframes logoFadeIn {
       0% { opacity: 0; transform: scale(0.8); }
       100% { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes pulseLogo {
-      0% { transform: scale(1); filter: drop-shadow(0 0 10px #00FF00); }
-      50% { transform: scale(1.05); filter: drop-shadow(0 0 15px #00FF00); }
-      100% { transform: scale(1); filter: drop-shadow(0 0 10px #00FF00); }
     }
 
     .ai-loading-text {
